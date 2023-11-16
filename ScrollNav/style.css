@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  background-image: url("img/grid.png");
+  box-sizing: cover;
+}
+
+main{
+  padding-top: 5em;
+  min-height: 300vh;
+}
+
+.scroll-down{
+  width: 50px;
+  height: 50px;
+  margin: 50px auto 100vh auto;
+  background-image: url("img/scroll-down.png");
+  background-size: cover;
+}
+
+.nav{
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition-property: transform;
+  transition-duration: .5s;
+  box-shadow: 0 5px 12px #ccc;
+}
+
+.nav--hidden{
+  transform: translateY(-100%);
+}
+
+.nav__list{
+  display: flex;
+  list-style: none;
+  font-family: 'Lucida Sans Regular', sans-serif;
+}
+
+.nav__item{
+  padding: 1em;
+}
