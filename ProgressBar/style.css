@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("img/grid.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+main{
+  min-height: 300vh;
+}
+
+.scroll-down{
+  width: 50px;
+  height: 50px;
+  margin: 50px auto 100vh auto;
+  background-image: url("img/scroll-down.png");
+  background-size: cover;
+}
+
+.reading-progress{
+  position: fixed;
+  height: 1em;
+  background: darkviolet;
+  width: 100%;
+  top: 0;
+}
+
+.reading-progress__bar{
+  width: 0%;
+  height: 1em;
+  background: orange;
+}
