@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  position: absolute; /* scroll avec la page contrairement à fixed */
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+.menu{
+  position: fixed;
+  /* top right bottom left= position qd le menu est ouvert */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  z-index: 10;
+  /* masquer le menu*/
+  /* display: none; */
+
+  /* avec une transition */
+  /*
+   transiton avec 2 propriétés
+   opacity 
+   transform
+   https://easings.net/ => animation de transition
+  */  
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.menu--open .menu{
+  transform: translateX(0);
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+  }
+
+  .menu.show {
+      display: flex;
+  }
+
+  .menu li {
+      margin: 10px 0;
+  }
+
+  .menu-btn {
+      display: block;
+  }
+}
