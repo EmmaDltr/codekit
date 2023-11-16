@@ -1,0 +1,19 @@
+.nav ul{
+	display: block;
+  }
+.nav li{
+	display: inline-block;
+  }
+  
+.nav li a:hover{
+	color:#4d90fe;
+  }
+  
+  .hidden{
+	display: none;
+  }
+  
+  button.active{
+	background-color: #fff;
+	color: #4d90fe;
+  }
