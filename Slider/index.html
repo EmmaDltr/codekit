@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+    BEM = 
+    block > .slider
+    element > .slider__control
+    modifier > .qqch--modifier
+-->
+    <div class="slider">
+        <ul class="slider__controls grid">
+            <li class="slider__btn"><button class="btn__prev">Prev</button></li>
+            <li class="slider__btn"><button class="btn__next">Next</button></li>
+        </ul>
+        <ul class="slider__list">
+            <li class="slider__el slider__el--show grid">
+                <div class="slider__content">
+                    <h2 class="title">Slide 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis ducimus voluptatibus tempora
+                        itaque nihil architecto aliquid repellat delectus deserunt consectetur quo, amet soluta
+                        accusantium earum quos, asperiores neque inventore!</p>
+                </div>
+            </li>
+            <li class="slider__el grid">
+                <div class="slider__content">
+                    <h2 class="title">Slide 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis ducimus voluptatibus tempora
+                        itaque nihil architecto aliquid repellat delectus deserunt consectetur quo, amet soluta
+                        accusantium earum quos, asperiores neque inventore!</p>
+                </div>
+            </li>
+            <li class="slider__el grid">
+                <div class="slider__content">
+                    <h2 class="title">Slide 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis ducimus voluptatibus tempora
+                        itaque nihil architecto aliquid repellat delectus deserunt consectetur quo, amet soluta
+                        accusantium earum quos, asperiores neque inventore!</p>
+                </div>
+            </li>
+            <li class="slider__el grid">
+                <div class="slider__content">
+                    <h2 class="title">Slide 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis ducimus voluptatibus tempora
+                        itaque nihil architecto aliquid repellat delectus deserunt consectetur quo, amet soluta
+                        accusantium earum quos, asperiores neque inventore!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
